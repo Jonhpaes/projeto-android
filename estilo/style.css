@@ -55,25 +55,38 @@ header {
 }
 
 header > h1 {
-    color: white;
-    font-family: var(--fonte-destaque);
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 0px black;
+    color: white;/*cor do texto*/
+    
+    font-family: var(--fonte-destaque);/*font do texto principal, usando o root*/
+    
+    text-align: center; /*crentralizar o texto*/
+    
+    font-weight: normal; /*tirando o negrito do texto, pois a font já deixa o texto bem destacado*/
+    
+    margin-bottom: 20px; /*colocando um devido espaço dem baixo do texto para separar do conteudo <p>.*/
+    
+    text-shadow: 2px 2px 0px black;/*sombra no exto*/
 
 }
 
 header > p {
-    font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    color: white;
-    max-width: 600px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: auto;
-    padding-bottom: 50px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    font-family: var(--fonte-padrao);/*font do texto principal, usando o root*/
+    
+    font-size: 1.2em; /*tamanho do texto*/
+    
+    color: white; /* cor do texto*/
+    
+    max-width: 600px; /* fazer com que o texto quebre a linha em disposivos menos ou quando diminuir a tela do navegador*/ 
+    
+    padding-right: 10px; /* espaço pequeno no texto na lateral direita*/
+    
+    padding-left: 10px;/* espaço pequeno no texto na lateral esquerda*/
+    
+    margin: auto; /*fazer com que o texto se adéque(ajuste) sosinho*/
+   
+    padding-bottom: 30px; /*separar o texto do menu*/
+    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315); /* sombras no texto usamos a tag text-shadow*/
 }
 
 nav {
@@ -122,7 +135,15 @@ main h2 {
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor2), transparent);
     text-indent: 8px;
+    transition-duration: 1s;
+    border-radius: 8px;
 }
+
+main h2:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
 main p {
     margin: 15px 0px;
     text-align: justify;
@@ -137,19 +158,28 @@ main a {
     color: var(--cor5);
     background-color: var(--cor1);
     padding: 2px 6px;
-    transition-duration: .5s;
+    transition-duration: 1s;
     border-radius: 5px;
+
 }
 
 main a:hover {
     text-decoration: underline;
-    color: var(--cor4);
+    color: var(--cor5);
+    background-color: var(--cor3);
 }
 
 main strong {
     color: var(--cor4);
     font-weight: bold;
     padding: 2px 6px;
+    transition-duration: 1s;
+    border-radius: 8px;
+}
+
+main strong:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main img {
