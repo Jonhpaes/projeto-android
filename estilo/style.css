@@ -245,6 +245,7 @@ footer a {
     color: white;
     border-radius: 5px;
     padding: 3px;
+    text-decoration: none;
 }
 
 footer a:hover {
